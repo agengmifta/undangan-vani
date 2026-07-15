@@ -155,30 +155,27 @@ musicButton.onclick = async () => {
 };
 
 // ===============================
-// HEADER FADE
+// HEADER FADE & PARALLAX
 // ===============================
 
 window.addEventListener("scroll", () => {
-
     const cover = document.querySelector(".cover");
-
+    const coverContent = document.querySelector(".cover-content");
+    
     let value = window.scrollY;
-
-    cover.style.opacity = 1 - value / 800;
-
-});
-
-// ===============================
-// PARALLAX
-// ===============================
-
-window.addEventListener("scroll", () => {
-
-    const cover = document.querySelector(".cover");
-
-    cover.style.backgroundPositionY =
-        window.pageYOffset * 0.5 + "px";
-
+    
+    // Smooth fade effect
+    cover.style.opacity = Math.max(0, 1 - value / 600);
+    
+    // Parallax background
+    cover.style.backgroundPositionY = window.pageYOffset * 0.5 + "px";
+    
+    // Content scale and fade dengan parallax
+    if (coverContent) {
+        const scale = Math.max(0.85, 1 - value / 1200);
+        coverContent.style.transform = `scale(${scale}) translateY(${value * 0.3}px)`;
+        coverContent.style.opacity = Math.max(0, 1 - value / 500);
+    }
 });
 
 // ===============================
