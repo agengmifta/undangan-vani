@@ -1,0 +1,24 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#FCF7F0"/>
+  <rect x="0" y="0" width="1600" height="1200" fill="url(#bg)"/>
+  <g opacity="0.75">
+    <circle cx="255" cy="191" r="170" fill="#F4E0C5"/>
+    <circle cx="1320" cy="260" r="200" fill="#EED7B5"/>
+    <circle cx="700" cy="990" r="260" fill="#F4E0C5"/>
+  </g>
+  <g opacity="0.28">
+    <path d="M610 280C608 242 638 178 701 170C764 162 823 226 819 292C815 356 749 420 675 392C616 370 611 327 610 280Z" fill="#AC6B39"/>
+    <path d="M401 357C367 338 324 346 306 377C287 409 299 459 337 470C376 480 421 447 428 409C435 370 433 377 401 357Z" fill="#8A4E2A"/>
+    <path d="M1061 345C1030 311 980 318 963 352C945 387 959 440 1000 454C1040 467 1078 441 1086 405C1094 370 1088 377 1061 345Z" fill="#8A4E2A"/>
+    <path d="M940 716C915 689 875 694 853 723C831 753 839 795 877 806C915 818 955 790 964 754C972 723 963 742 940 716Z" fill="#AC6B39"/>
+  </g>
+  <path d="M562 260C562 260 612 220 676 220C740 220 790 260 790 260" stroke="#B77D44" stroke-width="4" stroke-linecap="round"/>
+  <path d="M770 264C770 264 811 241 855 241C899 241 940 264 940 264" stroke="#B77D44" stroke-width="4" stroke-linecap="round"/>
+  <path d="M626 392C626 392 675 357 745 357C815 357 864 392 864 392" stroke="#B77D44" stroke-width="4" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="bg" x1="126" y1="98" x2="1476" y2="1079" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F1"/>
+      <stop offset="1" stop-color="#F3E6D8"/>
+    </linearGradient>
+  </defs>
+</svg>
