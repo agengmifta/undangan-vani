@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Wedding Of Vani & Firman</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOADING ================= -->
+
+    <div id="loading">
+
+        <div class="loader"></div>
+
+        <h2>Loading...</h2>
+
+    </div>
+
+    <!-- ================= MUSIC ================= -->
+
+    <audio id="music" loop>
+
+        <source src="assets/music/wedding.mp3" type="audio/mp3">
+
+    </audio>
+
+    <!-- ================= COVER ================= -->
+
+    <section class="cover">
+
+        <div class="overlay"></div>
+        <div class="cover-orbit orbit-left"></div>
+        <div class="cover-orbit orbit-right"></div>
+        <div class="cover-petals"></div>
+
+        <div class="cover-content">
+
+            <p>The Wedding Of</p>
+
+            <h1>
+
+                Vani Vinatalia
+
+                <span>&</span>
+
+                Firman Rizqi Irobbi
+
+            </h1>
+
+            <h3>02 Oktober 2026</h3>
+
+            <p class="invite-text">
+    Dengan penuh rasa syukur,
+    kami mengundang Bapak/Ibu/Saudara/i
+    untuk hadir dan memberikan doa restu
+    pada hari bahagia kami.
+           </p>
+
+            <button id="openInvitation">
+
+                <i class="fa-solid fa-envelope-open"></i>
+
+                Buka Undangan
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <p data-aos="fade-up">
+
+                Assalamu'alaikum Warahmatullahi Wabarakatuh
+
+            </p>
+
+            <h2 data-aos="fade-up">
+
+                Dengan memohon rahmat dan ridho Allah SWT,
+
+                kami bermaksud mengundang
+
+                Bapak/Ibu/Saudara/i
+
+                untuk menghadiri acara pernikahan kami.
+
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MEMPELAI ================= -->
+
+    <section class="couple">
+
+        <div class="container">
+
+            <div class="card" data-aos="fade-right">
+
+                <img src="assets/img/bride.svg" alt="Vani">
+
+                <h2>Vani Vinatalia</h2>
+
+                <p>
+
+                    Putri Tunggal
+
+                    <br>
+
+                    Bapak Suwoto (Cak Bogel)
+
+                    <br>
+
+                    &
+
+                    <br>
+
+                    Ibu Muklisah
+
+                </p>
+
+            </div>
+
+            <div class="love">
+
+                ❤
+
+            </div>
+
+            <div class="card" data-aos="fade-left">
+
+                <img src="assets/img/groom.svg" alt="Firman">
+
+                <h2>Firman Rizqi Irobbi</h2>
+
+                <p>
+
+                    Putra Pertama
+
+                    <br>
+
+                    Bapak Mat Sugiri
+
+                    <br>
+
+                    &
+
+                    <br>
+
+                    Ibu Yuni Aris Susanti
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COUNTDOWN ================= -->
+
+    <section class="countdown">
+
+        <h2>Menuju Hari Bahagia</h2>
+
+        <div id="timer">
+
+            <div><span id="days">00</span><small>Hari</small></div>
+
+            <div><span id="hours">00</span><small>Jam</small></div>
+
+            <div><span id="minutes">00</span><small>Menit</small></div>
+
+            <div><span id="seconds">00</span><small>Detik</small></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ACARA ================= -->
+
+    <section class="event">
+
+        <h2>Wedding Event</h2>
+
+        <div class="event-box">
+
+            <h3>Akad Nikah</h3>
+
+            <p>
+
+                Jumat
+
+                <br>
+
+                2 Oktober 2026
+
+                <br>
+
+                08.00 WIB
+
+            </p>
+
+        </div>
+
+        <div class="event-box">
+
+            <h3>Resepsi</h3>
+
+            <p>
+
+                Sabtu
+
+                <br>
+
+                3 Oktober 2026
+
+                <br>
+
+                Bebas
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOKASI ================= -->
+
+    <section class="location">
+
+        <div class="container">
+
+            <h2>Love Story</h2>
+
+            <div class="story-grid">
+
+                <div class="story-item" data-aos="fade-up">
+                    <h3>Awal Bertemu</h3>
+                    <p>Perjalanan kami dimulai dari satu percakapan sederhana, lalu tumbuh menjadi cinta yang penuh doa dan harapan.</p>
+                </div>
+
+                <div class="story-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Lamaran</h3>
+                    <p>Dengan izin Allah, kami melangkah menuju satu janji suci yang paling indah dalam hidup kami.</p>
+                </div>
+
+                <div class="story-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Menikah</h3>
+                    <p>InsyaAllah, 2 Oktober 2026 menjadi awal perjalanan baru yang penuh kebahagiaan dan keberkahan.</p>
+                </div>
+
+            </div>
+
+            <div class="location-card" data-aos="fade-up">
+
+                <h3>Lokasi Acara</h3>
+
+                <p>
+                    Kediaman Mempelai Wanita
+                    <br>
+                    Dusun Pendopo RT 03 RW 01
+                    <br>
+                    Desa Entalsewu
+                    <br>
+                    Kecamatan Buduran
+                    <br>
+                    Kabupaten Sidoarjo
+                </p>
+
+                <a href="#" class="maps">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Lihat Lokasi
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GALERI ================= -->
+
+    <section class="gallery">
+
+        <div class="container">
+            <h2>Gallery</h2>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery1.svg" alt="Gallery 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery2.svg" alt="Gallery 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery3.svg" alt="Gallery 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery4.svg" alt="Gallery 4">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="closing">
+
+    <h2>Terima Kasih</h2>
+
+    <p>
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu
+        kepada kami.
+    </p>
+
+    <h3>
+        Wassalamu'alaikum Warahmatullahi Wabarakatuh
+    </h3>
+
+    <h1>Vani & Firman</h1>
+
+</section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>Terima Kasih</h2>
+
+        <p>
+
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+
+            Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+
+        </p>
+
+        <h3>Vani & Firman</h3>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
