@@ -12,11 +12,13 @@ window.addEventListener("load", () => {
 // AOS ANIMATION
 // ===============================
 
-AOS.init({
-    duration: 1200,
-    once: true,
-    easing: "ease-in-out"
-});
+if (window.AOS) {
+    AOS.init({
+        duration: 1200,
+        once: true,
+        easing: "ease-in-out"
+    });
+}
 
 // ===============================
 // BUKA UNDANGAN
@@ -118,6 +120,21 @@ musicButton.style.boxShadow = "0 10px 20px rgba(0,0,0,.25)";
 musicButton.style.zIndex = "9999";
 musicButton.style.fontSize = "22px";
 
+const applyFloatingButtonLayout = () => {
+    const isSmallScreen = window.innerWidth <= 480;
+
+    musicButton.style.width = isSmallScreen ? "50px" : "60px";
+    musicButton.style.height = isSmallScreen ? "50px" : "60px";
+    musicButton.style.right = isSmallScreen ? "14px" : "20px";
+    musicButton.style.bottom = isSmallScreen ? "14px" : "20px";
+    musicButton.style.fontSize = isSmallScreen ? "18px" : "22px";
+
+    topButton.style.width = isSmallScreen ? "48px" : "55px";
+    topButton.style.height = isSmallScreen ? "48px" : "55px";
+    topButton.style.left = isSmallScreen ? "14px" : "20px";
+    topButton.style.bottom = isSmallScreen ? "14px" : "20px";
+};
+
 document.body.appendChild(musicButton);
 
 let playing = false;
@@ -216,6 +233,9 @@ topButton.style.boxShadow = "0 10px 20px rgba(0,0,0,.2)";
 topButton.style.zIndex = "9999";
 
 document.body.appendChild(topButton);
+
+applyFloatingButtonLayout();
+window.addEventListener("resize", applyFloatingButtonLayout);
 
 topButton.onclick = () => {
 

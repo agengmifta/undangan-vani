@@ -25,6 +25,15 @@ body{
     line-height:1.7;
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    word-break:break-word;
+}
+
 /* ===========================
    LOADING
 =========================== */
@@ -66,6 +75,7 @@ body{
     position:relative;
     width:100%;
     min-height:100vh;
+    min-height:100svh;
     background:url("assets/img/bg.svg") center center/cover;
     display:flex;
     justify-content:center;
@@ -540,45 +550,124 @@ footer h3{
 
 @media(max-width:768px){
 
-.cover h1{
+    section{
+        padding:70px 16px;
+    }
 
-font-size:42px;
+    .container{
+        width:100%;
+    }
+
+    .cover-content{
+        padding:16px 12px;
+    }
+
+    .cover h1{
+        font-size:42px;
+    }
+
+    .cover span{
+        font-size:36px;
+    }
+
+    .cover p{
+        font-size:16px;
+        letter-spacing:2px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .card{
+        width:100%;
+        padding:24px 18px;
+    }
+
+    #timer{
+        gap:12px;
+    }
+
+    #timer div{
+        width:calc(50% - 12px);
+        min-width:0;
+        padding:16px;
+    }
+
+    #timer span{
+        font-size:28px;
+    }
+
+    .story-grid{
+        grid-template-columns:1fr;
+    }
+
+    .event-box{
+        padding:24px 18px;
+    }
+
+    .invite-text{
+        font-size:15px;
+    }
+
+    .swiper-slide img{
+        min-height:220px;
+    }
 
 }
 
-.cover span{
+@media(max-width:480px){
 
-font-size:36px;
+    .cover h1{
+        font-size:34px;
+        line-height:1.15;
+    }
 
-}
+    .cover span{
+        font-size:28px;
+    }
 
-.hero h2{
+    .cover h3{
+        font-size:18px;
+        margin-bottom:24px;
+    }
 
-font-size:22px;
+    .hero h2{
+        font-size:20px;
+        line-height:1.45;
+    }
 
-}
+    #openInvitation{
+        width:100%;
+        padding:14px 20px;
+    }
 
-.card{
+    #timer div{
+        width:100%;
+    }
 
-width:100%;
+    .card img{
+        width:150px;
+        height:150px;
+    }
 
-}
+    .love{
+        font-size:44px;
+    }
 
-#timer div{
+    .story-item,
+    .location-card{
+        padding:20px 16px;
+    }
 
-width:90px;
+    .maps{
+        width:100%;
+        text-align:center;
+    }
 
-}
-
-.story-grid{
-    grid-template-columns:1fr;
-}
-
-#timer span{
-
-font-size:30px;
-
-}
+    .swiper-slide img{
+        min-height:180px;
+    }
 
 }
 
